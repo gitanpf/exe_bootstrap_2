@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./lib/bootstrap.min.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>QG Anime</title>
+    <style>
+
+        body {
+            background-color: #000000;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        header h1 {
+            color: #000000;
+            padding: 10px;
+            font-size: 4em;
+        }
+
+        header {
+            background: #7bff00;
+        }
+
+        #menu {
+            padding: 20px;
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .carousel img {
+            height: 50vh;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        #todosOsCards h2, #top5 h2 {
+            padding: 20px;
+            color: #7bff00;
+            font-size: 3em;
+        }
+
+        #todosOsCards h4, #top5 h4 {
+            font-size: 3em;
+        }
+
+        #todosOsCards h5, #top5 h5 {
+            font-size: 3em;
+        }
+
+        #todosOsCards, #top5 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card-img-overlay {
+            background-color: #00000086;
+        }
+
+        .card-img-overlay:hover {
+            background-color: #000000c9;
+        }
+
+        .card-text, .card-title, .card-subtitle, .card-body, .card-img-overlay {
+            text-align: center;
+        }
+
+        .card img {
+            border-radius: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>QG Anime</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item" >
+                            <a class="nav-link" href="#todosOsCards">Notícias</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="#top5">Top 5 animes</a>
+                        </li>
+                        <li class="nav-item" id="linkMenu">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid p-0">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="./image/fotografia  (1).jpg" />
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./image/fotografia  (2).jpg" />
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./image/fotografia  (2).png" />
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="todosOsCards">
+        <h2>Notícias</h2>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="./image/hunter-x-hunter-vol-1.jpg" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">O Retorno de Hunter x Hunter</h4>
+                        <h5 class="card-subtitle">Finalmente! *-*</h5>
+                        <p class="card-text">
+                            Yoshihiro Togashi, o autor de Hunter x Hunter, voltou a ser o assunto mais comentado após atualizar seu perfil com novos esboços. A novidade é que, com o volume 38 saindo e novos capítulos no mangá, surgiram rumores fortíssimos em fóruns japoneses sobre uma possível continuação do anime (focando no arco da Sucessão Real e na viagem ao Continente Sombrio) para o final de 2026.
+                        </p>
+                        <a href="#" class="btn btn-outline-light">Clique aqui para mais!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="./image/one-piece-live-action-season-2" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Live-Action de One Piece (na Netflix)</h4>
+                        <h5 class="card-subtitle">2ª Temporada</h5>
+                        <p class="card-text">
+                            A Netflix liberou as primeiras imagens oficiais dos cenários de Loguetown e confirmou a escalação de atores para personagens cruciais como Vivi e Chopper (que será feito com uma mistura de CGI e efeitos práticos). A produção promete cobrir todo o arco da Grand Line até Alabasta, elevando o nível de efeitos visuais para os poderes da Akuma no Mi.
+                        </p>
+                        <a href="#" class="btn btn-outline-light">Clique aqui para mais!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="./image/Kaiju_No8_Season_2" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">O Fenômeno de Kaiju No. 8</h4>
+                        <h5 class="card-subtitle">Confirmação de Filme/Especial</h5>
+                        <p class="card-text">
+                            Após o encerramento da temporada recente, foi confirmado que o arco seguinte não virá apenas como episódios semanais, mas haverá um evento cinematográfico para cobrir uma das batalhas mais épicas do mangá. O estúdio Production I.G. está usando tecnologias de animação 3D híbrida que estão sendo chamadas de "o novo padrão da indústria".
+                        </p>
+                        <a href="#" class="btn btn-outline-light">Clique aqui para mais!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="top5">
+        <h2>Os mais assistidos da temporada</h2>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="./image/jujutsunokaisen.jpg"/>
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Jujutsu No Kaisen: Culling Game</h4>
+                        <h5 class="card-subtitle">3ª Temporada</h5>
+                        <p class="card-text">
+                            Sem surpresas, o retorno de Jujutsu parou a internet. Esta temporada adapta o arco "Culling Game" (Jogo do Abate), trazendo lutas com coreografias insanas do estúdio MAPPA e novos personagens favoritos dos fãs, como Hakari e Higuruma. É o campeão absoluto de audiência até agora.
+                        </p>
+                        <a href="#" class="btn btn-outline-light">Clique aqui para mais!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="./image/frierens2.jpg"/>
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Frieren: Beyond Journey's End</h4>
+                        <h5 class="card-subtitle">2ª Temporada</h5>
+                        <p class="card-text">
+                            Após o sucesso estrondoso da primeira parte, a elfa Frieren voltou para manter o posto de "melhor nota da história". A segunda temporada foca em novos exames de magia e na continuação da jornada introspectiva para o norte. É o anime que domina as discussões sobre animação e trilha sonora.
+                        </p>
+                        <a href="#" class="btn btn-outline-light">Clique aqui para mais!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="./image/oshinooks3.jpg"/>
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Oshi no Ko</h4>
+                        <h5 class="card-subtitle">3ª Temporada</h5>
+                        <p class="card-text">
+                            O drama sobre o mundo dos idols e vingança continua em alta. A terceira temporada mergulha em arcos mais sombrios e desenvolve ainda mais o mistério sobre o pai dos gêmeos Aqua e Ruby. Ele disputa o terceiro lugar ponto a ponto com Hell's Paradise (2ª Temporada), mas costuma levar a melhor pelo engajamento nas redes sociais.
+                        </p>
+                        <a href="#" class="btn btn-outline-light">Clique aqui para mais!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
